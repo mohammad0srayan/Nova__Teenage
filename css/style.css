@@ -156,11 +156,10 @@ header{
 }
 
 .home{
-    animation: backChange 3s infinite;
     text-align: center;
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(#3AE9DC, #000, #3AE9DC);
+    background: linear-gradient(#000, #000, #3AE9DC);
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
@@ -168,18 +167,6 @@ header{
     gap: 2rem;
     padding: 30px 10% 0;
     transition: 1s ease-in-out;
-}
-
-@keyframes backChange {
-0% {
-        background: linear-gradient(#7a9694, #000, #86b7b6);
-    }
-    50% {
-        background: linear-gradient(#3AE9DC, #000, #3AE9DC);
-    }
-    100% {
-        background: linear-gradient(#7a9694, #000, #86b7b6);
-    }
 }
 
 
@@ -407,7 +394,7 @@ header{
 .education{
     padding: 10rem;
     color: #fff;
-    background: linear-gradient(#3AE9DC, #000, #000);
+    background: linear-gradient(#3AE9DC, #000, #3AE9DC);
 }
 
 .education h2{
@@ -493,7 +480,7 @@ header{
 .service{
     padding: 10rem;
     color: #fff;
-    background: linear-gradient(#000 ,#3AE9DC 100%, #000);
+    background: linear-gradient(#3AE9DC ,#000, #000);
 }
 
 .service-h2{
@@ -626,7 +613,7 @@ header{
 
 .footer{
     width: 100%;
-    background: #3AE9DC;
+    background: #000;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -646,7 +633,7 @@ header{
     width: 35px;
     border: 2px solid #3AE9DC;
     border-radius: 50%;
-    color: #000;
+    color: #3AE9DC;
     font-size: 20px;
     box-shadow: 0 0 10px #000;
     transition: 500ms ease-in-out;
@@ -665,7 +652,7 @@ header{
 .menu-footer a{
     position: relative;
     bottom: 10px;
-    color: #000;
+    color: #3AE9DC;
     font-size: 15px;
     margin: 0px 15px;
     transition: 500ms;
@@ -680,7 +667,7 @@ header{
     bottom: 1rem;
     margin-top: 1.5rem;
     letter-spacing: 1px;
-    color: #000;
+    color: #3AE9DC;
     font-size: 12px;
 }
 
@@ -802,4 +789,74 @@ header{
     .testmonilas-items{
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
+}
+
+.business {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    padding: 4rem;
+    height: 100vh;
+    background: linear-gradient(#3AE9DC, #000 100%);
+}
+
+.main-business {
+    padding: 0 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo-business img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.content-business {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: #fff;
+}
+
+.content-business h1{
+    font-size: 4rem;
+}
+
+.content-business p{
+    margin-top: 0.9rem;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    background: -webkit-linear-gradient(#eee, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.btn-business a{
+    padding: 0.9rem 3rem;
+    border-radius: 10px;
+    background: #004D99;
+    color: #fff;
+    font-size: 0.9rem !important;
+}
+
+.business-plan {
+    text-align: center;
+    padding: 5rem 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#000, #000, #3AE9DC);
+}
+
+.business-plan h1 {
+    font-size: 4rem;
+    color: #fff;
+}
+
+.business-plan p {
+    font-size: 1.4rem;
+    color: rgba(255, 255, 255, 0.8);
 }
