@@ -392,7 +392,7 @@ header{
     -webkit-text-fill-color: transparent;
     text-shadow: 0 0 25px #181e9e;
     text-align: center;
-    color: #fff;
+    color: #000;
     margin: 5rem 0;
 }
 
@@ -639,13 +639,14 @@ header{
     border-radius: 50%;
     color: #181e9e;
     font-size: 20px;
-    box-shadow: 0 0 10px #000;
+    box-shadow: 0 0 3px #000;
     transition: 500ms ease-in-out;
 }
 
 .footer-icon a:hover{
-    color: #fff;
-    box-shadow: 0 0 20px #181e9e;
+    color: #000;
+    border: 2px solid #000;
+    box-shadow: 0 0 10px #181e9e;
 }
 
 .menu-footer{
