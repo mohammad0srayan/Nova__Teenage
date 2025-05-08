@@ -723,6 +723,31 @@ header{
     }
 }
 
+@media screen and (max-width: 600px) {
+    .timeline-items::before{
+        left: calc(10% - 1px);
+    }
+
+    .timeline-items::before{
+        left: calc(5% - 1px);
+    }
+
+    .timeline-item:nth-child(odd){
+        padding-left: 3.3rem !important;
+        padding-right: calc(-10% + -10px);
+        text-align: left;
+    }
+
+    .timeline-item:nth-child(even){
+        padding-left: calc(5% + 30px);
+    }
+
+    .timeline-dot{
+        left: calc(5% - 8px);
+        top: 10px;
+    }
+}
+
 @media screen and (max-width: 500px) {
     .menu-footer {
         flex-direction: column;
@@ -755,10 +780,6 @@ header{
     .testmonilas-items{
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     }
-}
-
-@media screen and (max-width: 550px) {
-
 }
 
 @media screen and (max-width: 410px) {
