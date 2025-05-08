@@ -4,7 +4,7 @@
 }
 
 :root {
-    --primary-color: #000;
+    --primary-color: #181e9e;
     --theme-color: #fff;
 }
 
@@ -41,7 +41,7 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    background: #00000044;
+    background: rgba(245, 245, 245, 0.27);
     backdrop-filter: blur(10px);
     padding: 1.5rem 10rem;
     display: flex;
@@ -70,7 +70,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
+    color: #181e9e;
     font-size: 3rem;
 }
 
@@ -114,21 +114,21 @@ header{
 }
 
 .pre:hover{
-    color: #3AE9DC;
-    text-shadow: 0px 0px 25px #3AE9DC;
+    color: #181e9e;
+    text-shadow: 0px 0px 25px #181e9e;
     transform: scale(1.1);
 }
 
 .pre span{
     font-weight: 600;
-    color: #3AE9DC;
+    color: #181e9e;
     transition: 500ms;
-    text-shadow: 0px 0px 25px #00ffee , 0px 0px 50px #00ffee;
+    text-shadow: 0px 0px 25px #181e9e , 0px 0px 50px #181e9e;
 }
 
 .pre span:hover{
-    color: #3AE9DC;
-    text-shadow: 0px 0px 25px #00ffdd , 0px 0px 50px #00ffdd;
+    color: #181e9e;
+    text-shadow: 0px 0px 25px #181e9e, 0px 0px 50px #181e9e;
 }
 
 .menu{
@@ -145,21 +145,22 @@ header{
 
 .home-a{
     padding: 5px 0px;
-    border-bottom: 2px solid #3AE9DC;
+    color: #181e9e;
+    border-bottom: 2px solid #181e9e;
 }
 
 .menu a:hover{
     font-size: 17px;
     padding: 5px 0px;
-    color: #3AE9DC;
-    border-bottom: 2px solid #3AE9DC;
+    color: #181e9e;
+    border-bottom: 2px solid #181e9e;
 }
 
 .home{
     text-align: center;
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(#000, #000, #3AE9DC);
+    background: linear-gradient(#181e9e, #fff);
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
@@ -176,6 +177,10 @@ header{
     color: #fff;
 }
 
+.home-content h1 span {
+    color: #181e9e;
+}
+
 .home-content h2{
     font-size: 2em;
     color: #fff;
@@ -188,7 +193,7 @@ header{
 
 .home-content h2 span::before{
     content: "";
-    color: #3AE9DC;
+    color: #181e9e;
     animation: word 5s infinite;
 }
 
@@ -197,14 +202,14 @@ header{
     position: absolute;
     width: calc(100% + 8px);
     height: 100%; 
-    border-left: 3px solid #3AE9DC;
+    border-left: 3px solid #181e9e;
     right: -8px;
     animation: cursor 1s infinite, type 20s steps(14) infinite;
 }
 
 @keyframes cursor{
     to{
-        border-left: 2px solid #3AE9DC;
+        border-left: 2px solid #181e9e;
     }
 }
 
@@ -297,8 +302,8 @@ header{
 .home-icon a:hover{
     transform: scale(1.1);
     color: #6affeb;
-    text-shadow: 0px 0px 50px #3AE9DC;
-    box-shadow: 0px 0px 25px #3AE9DC;
+    text-shadow: 0px 0px 50px #181e9e;
+    box-shadow: 0px 0px 25px #181e9e;
 }
 
 .home-btn{
@@ -319,9 +324,9 @@ header{
 
 .btn-hire:hover{
     background: transparent;
-    color: #3AE9DC;
-    border: 1px solid #3AE9DC;
-    box-shadow: 0px 0px 0px #3AE9DC;
+    color: #181e9e;
+    border: 1px solid #181e9e;
+    box-shadow: 0px 0px 0px #181e9e;
 }
 
 .btn-contact{
@@ -338,14 +343,14 @@ header{
 
 .btn-contact:hover{
     color: #000;
-    background: #3AE9DC;
-    border: 2px solid #3AE9DC;
-    box-shadow: 0px 0px 25px #3AE9DC;
+    background: #181e9e;
+    border: 2px solid #181e9e;
+    box-shadow: 0px 0px 25px #181e9e;
 }
 
 .home-img{
-    border: 2px solid #3AE9DC;
-    box-shadow: 0px 0px 25px #00ffdd;
+    border: 2px solid #181e9e;
+    box-shadow: 0px 0px 25px #181e9e;
     border-radius: 50%;
     height: 350px;
     width: 350px;
@@ -362,7 +367,7 @@ header{
 
 .home-img:hover{
     transform: scale(1.1);
-    box-shadow: 0px 0px 25px #1bc9b1,0px 0px 50px #1bc9b1;
+    box-shadow: 0px 0px 25px #181e9e,0px 0px 50px #181e9e;
 }
 
 ::-webkit-scrollbar{
@@ -370,7 +375,7 @@ header{
 }
 
 ::-webkit-scrollbar-thumb{
-    background: linear-gradient(#000, #3AE9DC, #000);
+    background: linear-gradient(#000, #181e9e, #000);
 }
 
 ::-webkit-scrollbar-track{
@@ -385,7 +390,7 @@ header{
     background: -webkit-linear-gradient(#000, #000);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-shadow: 0 0 25px #3AE9DC;
+    text-shadow: 0 0 25px #181e9e;
     text-align: center;
     color: #fff;
     margin: 5rem 0;
@@ -394,7 +399,7 @@ header{
 .education{
     padding: 3rem 10rem;
     color: #fff;
-    background: linear-gradient(#000 ,#3AE9DC, #000, #3AE9DC);
+    background: linear-gradient(#181e9e, #fff);
 }
 
 .education h2{
@@ -413,7 +418,7 @@ header{
     position: absolute;
     width: 5px;
     height: 96%;
-    background: #3AE9DC;
+    background: #181e9e;
     left: calc(50% - 1px);
 }
 
@@ -437,9 +442,9 @@ header{
     width: 21px;
     position: absolute;
     left: calc( 50% - 8px );
-    background: #3AE9DC;
-    box-shadow: 0 0 25px #3AE9DC,
-    0 0 50px #3AE9DC;
+    background: #181e9e;
+    box-shadow: 0 0 25px #181e9e,
+    0 0 50px #181e9e;
     border-radius: 50%;
     top: 10px;
 }
@@ -453,8 +458,8 @@ header{
 .timeline-content{
     padding: 25px 40px;
     background: #000;
-    box-shadow: 0 0 25px #3AE9DC;
-    border: 3px solid #3AE9DC;
+    box-shadow: 0 0 25px #181e9e;
+    border: 3px solid #181e9e;
     border-radius: 3rem;
     cursor: pointer;
     transition: 500ms ease-in-out;
@@ -462,8 +467,8 @@ header{
 
 .timeline-content:hover{
     transform: scale(1.1);
-    box-shadow: 0 0 25px #3AE9DC,
-    0 0 50px #3AE9DC;
+    box-shadow: 0 0 25px #181e9e,
+    0 0 50px #181e9e;
 }
 
 .timeline-content h3{
@@ -480,7 +485,7 @@ header{
 .service{
     padding: 10rem;
     color: #fff;
-    background: linear-gradient(#3AE9DC ,#000, #000);
+    background: linear-gradient(#181e9e ,#fff, #fff);
 }
 
 .service-h2{
@@ -488,7 +493,7 @@ header{
     background: -webkit-linear-gradient(#fff, #fff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-shadow: 0 0 25px #3AE9DC;
+    text-shadow: 0 0 25px rgba(24, 30, 158, 0.68);
     text-align: center;
     color: #fff;
 }
@@ -502,7 +507,7 @@ header{
 }
 
 .service-box{
-    background: #3AE9DC;
+    background: #181e9e;
     height: 200px;
     width: 100%;
     border-radius: 2rem;
@@ -514,7 +519,8 @@ header{
 .service-box:hover{
     transform: scale(1.1);
     background: #fff;
-    border: 4px solid #3AE9DC;
+    color: #000;
+    border: 4px solid #181e9e;
 }
 
 .service-box .service-item{
@@ -531,11 +537,9 @@ header{
     margin: 5px 0px;
     font-size: 20px;
     font-weight: 800;
-    color: #000;
 }
 
 .service-item p{
-    color: #000;
     font-size: 15px;
     font-weight: 300;
 }
@@ -543,7 +547,7 @@ header{
 .testmonilas{
     padding: 2rem 10rem;
     color: #fff;
-    background-image: linear-gradient(180deg, rgba(58,233,220,1) 0%, rgba(0,0,0,1) 33%, rgba(0,0,0,1) 76%, rgba(58,233,220,1) 100%);
+    background: linear-gradient(#fff, #181e9e);
 }
 
 .testmonilas-items{
@@ -560,7 +564,7 @@ header{
     margin: 2rem 0;
     cursor: pointer;
     background: #000000ce;
-    box-shadow: 0 0 15px #3AE9DC;
+    box-shadow: 0 0 15px #181e9e;
     border: 5px solid #2b2929;
     border-radius: 1.5rem;
     display: flex;
@@ -584,8 +588,8 @@ header{
     height: 100%;
     object-fit: cover;
     border-radius: 50%;
-    border: 3px solid #3AE9DC;
-    box-shadow: 0 0 25px #3AE9DC;
+    border: 3px solid #181e9e;
+    box-shadow: 0 0 25px #181e9e;
 }
 
 .testmonilas-item{
@@ -597,8 +601,8 @@ header{
 
 .testmonilas-box:hover{
     transform: scale(1);
-    box-shadow: 0 0 25px #3AE9DC,
-    0 0 50px #3AE9DC;
+    box-shadow: 0 0 25px #181e9e,
+    0 0 50px #181e9e;
 }
 
 .test-icon{
@@ -613,7 +617,7 @@ header{
 
 .footer{
     width: 100%;
-    background: #000;
+    background: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -631,9 +635,9 @@ header{
     align-items: center;
     height: 35px;
     width: 35px;
-    border: 2px solid #3AE9DC;
+    border: 2px solid #181e9e;
     border-radius: 50%;
-    color: #3AE9DC;
+    color: #181e9e;
     font-size: 20px;
     box-shadow: 0 0 10px #000;
     transition: 500ms ease-in-out;
@@ -641,7 +645,7 @@ header{
 
 .footer-icon a:hover{
     color: #fff;
-    box-shadow: 0 0 20px #3AE9DC;
+    box-shadow: 0 0 20px #181e9e;
 }
 
 .menu-footer{
@@ -652,14 +656,14 @@ header{
 .menu-footer a{
     position: relative;
     bottom: 10px;
-    color: #3AE9DC;
+    color: #181e9e;
     font-size: 15px;
     margin: 0px 15px;
     transition: 500ms;
 }
 
 .menu-footer a:hover{
-    border-bottom: 2px solid #3AE9DC;
+    border-bottom: 2px solid #181e9e;
 }
 
 .footer p{
@@ -667,7 +671,7 @@ header{
     bottom: 1rem;
     margin-top: 1.5rem;
     letter-spacing: 1px;
-    color: #3AE9DC;
+    color: #181e9e;
     font-size: 12px;
 }
 
@@ -677,7 +681,7 @@ header{
     align-items: center;
     padding: 4rem;
     height: max-content;
-    background: linear-gradient(#3AE9DC, #000 100%);
+    background: linear-gradient(#fff,#181e9e);
 }
 
 .main-business {
@@ -717,7 +721,7 @@ header{
 .btn-business a{
     padding: 0.9rem 3rem;
     border-radius: 10px;
-    background: #004D99;
+    background: #181e9e !important;
     color: #fff;
     font-size: 0.9rem !important;
 }
@@ -729,7 +733,7 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #000;
+    background: linear-gradient(#181e9e, #fff);
 }
 
 .business-plan h1 {
@@ -744,7 +748,7 @@ header{
 
 .cart-business {
     padding: 5rem 10rem;
-    background: linear-gradient(#000, #000, #000);
+    background: linear-gradient(#fff, #181e9e);
 }
 
 .cart-items {
@@ -774,6 +778,10 @@ header{
     border-radius: 10px 10px 0 0;
     padding: 0.5rem;
     background: linear-gradient(45deg, #022E5F, #035cab, #035cab);
+}
+
+.cart-header h2 {
+    font-size: 1.3rem !important;
 }
 
 .cart-main {
@@ -810,14 +818,15 @@ header{
     padding: 0.8rem 3rem;
     background: transparent;
     color: #fff;
-    border: 3px solid #035cab;
+    border: 3px solid #fff;
     border-radius: 10px;
     transition: 300ms ease-in-out;
 }
 
 .btn-cart button:hover {
     cursor: pointer;
-    background: #035cab !important;
+    color: #000;
+    background: #fff !important;
 }
 
 @media screen and (max-width: 1650px) {
