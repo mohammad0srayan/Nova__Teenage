@@ -103,7 +103,7 @@ header{
 }
 
 .loader > img {
-    width: 100px;
+    width: 500px;
 }
 
 .loader.hidden {
@@ -720,7 +720,7 @@ header{
 }
 
 .content-business h1{
-    font-size: 4rem;
+    font-size: 1.8rem;
 }
 
 .content-business p{
@@ -730,6 +730,10 @@ header{
     background: -webkit-linear-gradient(#eee, #fff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.content-business p span {
+    font-weight: 600;
 }
 
 .btn-business a{
