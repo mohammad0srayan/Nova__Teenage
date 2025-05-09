@@ -1001,6 +1001,10 @@ header{
     .testmonilas-items{
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     }
+
+    .loader img {
+        width: 300px;
+    }
 }
 
 @media screen and (max-width: 410px) {
