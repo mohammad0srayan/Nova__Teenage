@@ -909,7 +909,7 @@ header{
     }
 }
 
-@media screen and (min-width: 1000px) {
+/* @media screen and (min-width: 1000px) {
     .sidebar {
         width: 100%;
     }
@@ -923,7 +923,7 @@ header{
             width: 100%;
         }
     }
-}
+} */
 
 @media screen and (max-width: 1000px) {
     .education {
