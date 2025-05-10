@@ -51,26 +51,46 @@ header{
 }
 
 .sidebar {
-    display: none;
-    justify-content: center;
-    align-items: center;
     position: fixed;
     top: 0;
     left: 0;
-    width: 250px;
     height: 100vh;
-    background: rgba(48, 48, 54, 0.56);
+    width: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-250px);
+    background: #9ca0f5;
+    backdrop-filter: blur(40px);
+    padding: 0.5rem 1rem;
+    transition: 300ms all ease-in-out;
 }
 
 .sidebar.active {
-    display: flex;
-    flex-direction: column;
+    transform: translateX(0);
+    width: 260px;
+}
+
+.close {
+    animation: rotate 1s forwards;
+    display: none;
+}
+
+@keyframes rotate {
+    from {
+        opacity: 0;
+        transform: rotate(0deg);
+    }
+    to {
+        opacity: 1;
+        transform: rotate(360deg) scale(1);
+    }
 }
 
 .menu.active {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 3rem;
 }
 
 .menu-sidebar {
@@ -86,7 +106,6 @@ header{
     color: #181e9e;
     font-size: 3rem;
 }
-
 
 .loader {
     position: fixed;
@@ -890,6 +909,22 @@ header{
     }
 }
 
+@media screen and (min-width: 1000px) {
+    .sidebar {
+        width: 100%;
+    }
+    @keyframes open {
+        0% {
+            opacity: 0;
+            width: 100px;
+        }
+        100% {
+            opacity: 1;
+            width: 100%;
+        }
+    }
+}
+
 @media screen and (max-width: 1000px) {
     .education {
         padding: 1.5rem 2rem;
@@ -1019,7 +1054,6 @@ header{
 }
 
 @media screen and (max-width: 350px) {
-
     .service-items {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
